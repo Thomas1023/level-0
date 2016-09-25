@@ -11,40 +11,38 @@ public class zork {
 	static int cer = 10;
 	static int ac = 10;
 	static int type=1;
+	static int com=0;
 	public static void main(String[] args) {
 		
 		Scanner kb = new Scanner(System.in);
 		Scanner np = new Scanner(System.in);
 		System.out.println(
-				"wellcom to mesfel the virtial console rpg \n here you can quest through the world of mesfel all in your \n high dpi console. ");
+				"wellcom to mesfel the virtual console rpg \n here you can quest through the world of mesfel all in your \n high dpi console. ");
 		System.out.println("______________________________________________________________________");
 		System.out.println("now to get things started what is your race \n (elf,dwarf, or human)");
+		
 		String ans1 = kb.next();
+		
 		if (ans1.equalsIgnoreCase("elf")) {
-			System.out.println(
-					"great choice elves are a magical people of otherworldly grace, \n living in the world but not entirely part of it. ");
+			System.out.println("great choice elves are a magical people of otherworldly grace, \n living in the world but not entirely part of it. ");
 		}
 		if (ans1.equalsIgnoreCase("dwarf")) {
-			System.out.println(
-					"great choice dwarves are solid and enduring like the mountains they love,\n weathering the passage of centuries with stoic endurance and little change. ");
+			System.out.println("great choice dwarves are solid and enduring like the mountains they love,\n weathering the passage of centuries with stoic endurance and little change. ");
 		}
 		if (ans1.equalsIgnoreCase("human")) {
-			System.out.println(
-					"great choice whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.");
+			System.out.println("great choice whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.");
 		}
 		System.out.println("______________________________________________________________________");
 		System.out.println("Now what class do you want \n (Fighter, Wizard, Rogue)");
 		String ans2 = kb.next();
 		if (ans2.equalsIgnoreCase("Fighter")) {
-			System.out.println(
-					" another great choice rogues rely on skill, stealth, and their foes’ vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, bringing resourcefulness and versatility to their adventuring parties.");
+			System.out.println(" another great choice rogues rely on skill, stealth, and their foes vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, bringing resourcefulness and versatility to their adventuring parties.");
 		}
 		if (ans2.equalsIgnoreCase("Wizard")) {
 			System.out.println(" another great choice Drawing on the subtle weave of magic that permeates the \n cosmos, wizards cast spells of explosive fire, arcing lightning, subtle \n deception, and brute-force mind control.");
 		}
 		if (ans2.equalsIgnoreCase("Fighter")) {
-			System.out.println(
-					" another great choice questing knights, conquering overlords, royal champions,\n elite foot soldiers, hardened mercenaries, and bandit kings—as fighters,\n they all share an unparalleled mastery with weapons and armor, and a \n thorough knowledge of the skills of combat.");
+			System.out.println(" another great choice questing knights, conquering overlords, royal champions,\n elite foot soldiers, hardened mercenaries, and bandit kingsï¿½as fighters,\n they all share an unparalleled mastery with weapons and armor, and a \n thorough knowledge of the skills of combat.");
 		}
 		System.out.println("______________________________________________________________________");
 		if (ans2.equalsIgnoreCase("Wizard")) {
@@ -110,9 +108,10 @@ public class zork {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("You are in an town ally closed on three sides and open to the steet ahead \n infront of you there is a goblin with a shortsword he is wereing a make shift studed lether armor with an ac of 13 \n would you like to engage in combat or attempt run \n (comms: fight/run)");
+		System.out.println("You are in an town ally closed on three sides and open to the steet ahead \n infront of you there is a goblin with a shortsword he is wereing a make shift studed lether armor with an ac of 13 \n would you like to engage in combat or attempt run \n (comms: run/run)");
 		String ans4 = kb.next();
-
+		
+		// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
 		if (ans4.equalsIgnoreCase("run")) {
 			System.out.println("You scan the ally looking for an escape route you find two \n you and climb up a dranage pipe \n or you can try to open a door on the side (it could be locked \n comms(door,pipe)");
 		}
@@ -125,18 +124,35 @@ public class zork {
 			System.out.println("The door is locked \n do you want to try to pick the lock or try the pipe \ncomms(pipe,pick)");
 			String ans4door = kb.next();
 			if(ans4door.equalsIgnoreCase("pipe")){
-				System.out.println("You climb the pipe onto the roof the pipe wobbles ad creakes but holds up \n you are now on the roof do you want to go to the market ,the inn, or the sherif \n comms(market,inn,sherif)");
-			
+				System.out.println("You climb the pipe onto the roof the pipe wobbles ad creakes but holds up \n you are now on the roof /n tutoral completed");
+				 com=1;
+			}
 			if(ans4door.equalsIgnoreCase("pick") && ans2.equalsIgnoreCase("fighter") || ans2.equalsIgnoreCase("wizard")){
-				System.out.println("You fail to pick the lock \n you die");
+				System.out.println("You fail to pick the lock \n you die\n ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				
 			}
 			if(ans4door.equalsIgnoreCase("pick") && ans2.equalsIgnoreCase("Rogue")){
 				System.out.println("you pick the lock and you are in");
-					System.out.println("The bulding seems to be an empty store room for a general store \n there seems be ");
+					System.out.println("tutoral compleated");
+					com=1;
 			}
 			
 			}
+		if(com==1){
+			System.out.println("______________________________________________________________________");
+			System.out.println("Now chose your pokÃ©manÂ® ");
+			System.out.println("______________________________________________________________________");
+			System.out.println("bulbasur");
+			System.out.println("squirtle");
+			System.out.println("pikachu");
+			System.out.println("charmander");
+			String ans5 = kb.next();
+			System.out.println("");
+			System.out.println("");
+			System.out.println("A wild magicarp appeared");
+			
+			
 		}
-	}
-}
+		}
+		}
+	
